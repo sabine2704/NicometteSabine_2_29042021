@@ -1,0 +1,372 @@
+@font-face {
+    font-family: "raleway";
+    src: url(fonts/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "raleway light";
+    src: url(fonts/static/Raleway-Light.ttf);
+}
+
+body{
+    font-family: "raleway light";
+    margin: 0;
+    max-width: 1440px;
+}
+
+/*partie header*/
+header img{
+    width: 100px;
+    align-self: center;
+    
+}
+header{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 95%;
+    margin: auto;
+}
+
+nav ul{
+    list-style-type: none;
+    display: grid;
+    padding: 0px;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 0px;
+}
+
+nav li{
+    width: 160px;
+    display: grid;
+    height: 70px;
+}
+
+a.lien_nav{
+    text-decoration: none;
+    color: inherit;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+a.lien_nav:hover{ 
+    color : #0065FC;
+    background-color: #0065FC;
+    height: 3px;
+}
+
+/*bouton recherche*/
+#recherche{
+    width: 95%;
+    margin: auto;
+}
+
+#inscription{
+    color : #0065FC;
+    font-weight: bold;
+}
+
+div.bouton_recherche{
+    display: inline-flex;
+}
+
+.ici{
+    background-color: #f2f2f2;
+    font-size: 1.5em;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px 0px 0px 15px;
+    border: 1px solid #f2f2f2;
+}
+
+input#Rechercher{
+    font-size: 1.1em;
+    padding: 13px;
+    font-weight: bold;
+    border: none;
+    border-top: solid 3px #f2f2f2;
+    border-bottom: 3px solid #f2f2f2;
+}
+
+button{
+    background-color: #0065FC;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.1em;
+    border-radius: 0px 15px 15px 0px;
+}
+
+/*partie des filtres*/
+#filtres p{
+    font-weight:bold;
+    font-size: 18px;
+}
+
+#filtres{
+    display: inline-flex;
+    flex-direction: row;
+    font-weight: bold;
+    padding-top: 25px;
+    align-items: center;
+}
+
+.logos{
+    border: 3px solid #F2F2F2;
+    width: 220px;
+    border-radius: 50px;
+    margin-left: 15px;
+}
+
+.logofiltre{
+    color: #0065FC;
+    display: flex;
+    justify-content: center;
+    width: 60px;
+}
+
+.circle{
+    color: #DEEBFF;
+}
+
+/*bouton info*/
+#info{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.info{
+    color: #0065FC;
+    margin-left: 17px;
+}
+
+.circle_i{
+    color: #F2F2F2;
+}
+
+/*partie hébergements à marseille*/
+#Hébergements{
+    margin: auto;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 40px;
+    width: 95%;
+}
+
+#marseille{
+    background-color: #F2F2F2;
+    border-radius: 25px;
+    padding: 40px;
+    width: 820px;
+}
+
+.bloc_hebergement{
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 200px 200px;
+    width: 880px;
+    grid-column-gap: 25px;
+    grid-row-gap: 30px;
+}
+
+.box_hebergement{
+    width: 240px;
+    height: 200px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+img.imghebergement{
+    width: 235px;
+    height: 115px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+
+p,h3{
+    margin: 0px;
+    color: black;
+}
+
+.bloctexte{
+    padding: 15px;
+}
+
+.starbleue{
+    color:  #0065FC;
+}
+
+.stargrise{
+    color: #F2F2F2;
+}
+
+a.vignette_photo{
+    text-decoration: none;
+}
+
+.box_hebergement:hover{ 
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+/*partie hébergements populaires*/
+#populaire{
+    background-color: #F2F2F2;
+    border-radius: 25px;
+    padding: 40px;
+    width: 340px;
+}
+
+.bloc_populaire{
+    display: grid;
+    grid-template-columns: 340px;
+    grid-template-rows: 145px 145px 145px;
+    width: 420px;
+    grid-row-gap: 35px;
+}
+
+.box_populaire{
+    width: 340px;
+    height: 145px;
+    background-color: white;
+    padding: 0 5px;
+    border-radius: 20px;
+}
+
+.box_populaire:hover {
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+img.imgpopulaire{
+    width: 130px;
+    height: 135px;
+    object-fit: cover;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.bloc2{
+    grid-template-columns: 130px 210px;
+    grid-template-rows: 140px;
+    width: 340px;
+    display: grid;
+    align-items: flex-end;
+}
+
+#titre_populaire{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.graphique{
+    font-size: 1.5em;
+}
+
+.bloctexte_populaire{
+    padding: 15px;
+    width: 200px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#afficherplus{
+    margin-top: 20px;
+}
+
+/*partie activités*/
+h2#titre_activité{
+    margin: 60px 0 30px 50px;
+}
+
+#bloc_activités{
+    width: 1340px;
+    height: 450px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-column-gap: 40px;
+    grid-template-rows: 140px 40px 20px 40px 40px 110px 60px;
+    grid-template-areas:
+        "vignette1 vignette2 vignette4 vignette5"
+        "vignette1 vignette2 vignette4 intitulé5"
+        "vignette1 vignette2 vignette4 intitulé5"
+        "vignette1 intitulé2 vignette4 ."
+        "vignette1 . vignette4 vignette6"
+        "vignette1 vignette3 vignette4 vignette6"
+        "intitulé1 intitulé3 intitulé4 intitulé6";
+}
+
+#vignette1{
+    grid-area: vignette1;
+}
+
+#vignette2{
+    grid-area: vignette2;
+}
+
+#vignette3{
+    grid-area: vignette3;
+}
+
+#vignette4{
+    grid-area: vignette4;
+}
+
+#vignette5{
+    grid-area: vignette5;
+}
+
+#vignette6{
+    grid-area: vignette6;
+}
+
+.vignette_activité img{
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vignette{
+    width: 300px;
+    height: 100%;
+    margin: 0;
+}
+
+/*footer*/
+footer{
+    display: flex;
+    background-color: #f2f2f2;
+    width: 1440px;
+    height: 220px;
+    margin-top: 60px;
+}
+
+.bloc_footer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    width: 450px;
+    padding-top: 15px;
+}
+
+.texte_footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 30px;
+}
+
+a.lien_footer:hover{
+    color: #0065FC;
+    text-decoration: underline;
+}
