@@ -10,14 +10,15 @@
 </head>
 <body>
     <header>
-        <!--Logo RESERVIA-->
-        <img src="images/logo/Reservia@3x.png" alt="Logo Reservia">
         <nav><!--Menu de navigation-->
-            <ul>
-                <li><a class="lien_nav" href="#Hébergements">Hébergements</a></li>
-                <li><a class="lien_nav" href="#activités">Activités</a></li>
-                <li id="inscription"><a class="lien_nav" href="#">S'inscrire</a></li>
-            </ul>
+            <div id="logo_reservia">
+                <img src="images/logo/Reservia@3x.png" alt="Logo Reservia"></div>
+            <div class="bouton_nav">
+                <a class="lien_nav" href="#Hébergements">Hébergements</a></div>
+            <div class="bouton_nav">
+                <a class="lien_nav" href="#activités">Activités</a></div>
+            <div class="bouton_nav" id="inscription">
+                <a class="lien_nav" href="#">S'inscrire</a></div>
         </nav>
     </header>
 
@@ -28,31 +29,24 @@
             <i class="fas fa-map-marker-alt ici"></i><input type="search" id="Rechercher" name="Rechercher" placeholder="Marseille, France">
             <button>Rechercher</button>
         </div>
-        <div id="filtres"><p>Filtres</p>
-        <div class="logos">
-            <span class="fa-stack fa-2x">
-                <i class="fas fa-circle fa-stack-2x circle"></i>
-                <i class="fas fa-money-bill-wave fa-stack-1x logofiltre"></i>
-            </span>Economique
-        </div>
-        <div class="logos">
-            <span class="fa-stack fa-2x">
-                <i class="fas fa-circle fa-stack-2x circle"></i>
-                <i class="fas fa-child fa-stack-1x logofiltre"></i>
-            </span>Familial
-        </div>
-        <div class="logos">
-            <span class="fa-stack fa-2x">
-                <i class="fas fa-circle fa-stack-2x circle"></i>
-                <i class="fas fa-heart fa-stack-1x logofiltre"></i>
-            </span>Romantique
-        </div>
-        <div class="logos">
-            <span class="fa-stack fa-2x">
-                <i class="fas fa-circle fa-stack-2x circle"></i>
-                <i class="fas fa-dog fa-stack-1x logofiltre"></i>
-            </span>Animaux autorisés
-        </div></div>
+        <ul id="filtres"><p>Filtres</p>
+            <li class="logos">
+                <i class="fas fa-money-bill-wave logofiltre"></i>
+                <p class="nom_filtre">Economique</p>
+            </li>
+            <li class="logos">
+                <i class="fas fa-child logofiltre"></i>
+                <p class="nom_filtre">Familial</p>
+            </li>
+            <li class="logos">
+                <i class="fas fa-heart logofiltre"></i>
+                <p class="nom_filtre">Romantique</p>
+            </li>
+            <li class="logos">
+                <i class="fas fa-dog logofiltre"></i>
+                <p class="nom_filtre">Animaux autorisés</p>
+            </li>
+        </ul>
         <div id="info">
             <span class="fa-stack fa">
                 <i class="far fa-circle fa-stack-2x circle_i"></i>
@@ -218,13 +212,13 @@
         </div>
     </section>
 
-    <h2 id="titre_activité">Activités à Marseille</h2>
-    <section id="bloc_activités"><!--Activités à Marseille--> 
+    <h2 id="titre_activité">Activités à Marseille</h2><!--Activités à Marseille-->
+    <section id="bloc_activités"> 
         <div class="vignette_activité" id="vignette1">
-            <a href="#">
+            <a href="#"></a>
                 <div class="vignette">
                     <img id="photo1" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
-                    <h3 id="intitulé1">Vieux Port</h3>
+                    <h3 class="titre_photo" id="intitulé1">Vieux Port</h3>
                 </div>
             </a>
         </div>
@@ -232,7 +226,7 @@
             <a href="#">
                 <div class="vignette">
                     <img id="photo2" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
-                    <h3 id="intitulé2">Fort de Pomègues</h3>
+                    <h3 class="titre_photo" id="intitulé2">Fort de Pomègues</h3>
                 </div>
             </a>
         </div>
@@ -240,7 +234,7 @@
             <a href="#">
                 <div class="vignette">
                     <img id="photo3" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles de Frioul">
-                    <h3 id="intitulé3">Iles de Frioul</h3>
+                    <h3 class="titre_photo" id="intitulé3">Iles de Frioul</h3>
                 </div>
             </a>
         </div>
@@ -248,7 +242,7 @@
             <a href="#">
                 <div class="vignette">
                     <img id="photo4" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
-                    <h3 id="intitulé4">Parc National des Calanques</h3>
+                    <h3 class="titre_photo" id="intitulé4">Parc National des Calanques</h3>
                 </div>
             </a>
         </div>
@@ -256,7 +250,7 @@
             <a href="#">
                 <div class="vignette">
                     <img id="photo5" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
-                    <h3 id="intitulé5">Notre-Dame-de-la-Garde</h3>
+                    <h3 class="titre_photo" id="intitulé5">Notre-Dame-de-la-Garde</h3>
                 </div>
             </a>
         </div>
@@ -264,7 +258,7 @@
             <a href="#">
                 <div class="vignette">
                     <img id="photo6" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
-                    <h3 id="intitulé6">Parc Longchamp</h3>
+                    <h3 class="titre_photo" id="intitulé6">Parc Longchamp</h3>
                 </div>
             </a>
         </div>
