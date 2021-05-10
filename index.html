@@ -14,9 +14,9 @@
             <div id="logo_reservia">
                 <img src="images/logo/Reservia@3x.png" alt="Logo Reservia"></div>
             <div class="bouton_nav">
-                <a class="lien_nav" href="#Hébergements">Hébergements</a></div>
+                <a class="lien_nav" href="#Hebergements">Hébergements</a></div>
             <div class="bouton_nav">
-                <a class="lien_nav" href="#activités">Activités</a></div>
+                <a class="lien_nav" href="#titre_activite">Activités</a></div>
             <div class="bouton_nav" id="inscription">
                 <a class="lien_nav" href="#">S'inscrire</a></div>
         </nav>
@@ -29,7 +29,9 @@
             <i class="fas fa-map-marker-alt ici"></i><input type="search" id="Rechercher" name="Rechercher" placeholder="Marseille, France">
             <button>Rechercher</button>
         </div>
-        <ul id="filtres"><p>Filtres</p>
+        <div id=box_filtres>
+            <h3>Filtres</h3>
+            <ul id="filtres">
             <li class="logos">
                 <i class="fas fa-money-bill-wave logofiltre"></i>
                 <p class="nom_filtre">Economique</p>
@@ -46,7 +48,8 @@
                 <i class="fas fa-dog logofiltre"></i>
                 <p class="nom_filtre">Animaux autorisés</p>
             </li>
-        </ul>
+            </ul>
+        </div>
         <div id="info">
             <span class="fa-stack fa">
                 <i class="far fa-circle fa-stack-2x circle_i"></i>
@@ -55,7 +58,7 @@
         </div>
     </section>
 
-    <section id="Hébergements"><!--Section des hébergements-->
+    <section id="Hebergements"><!--Section des hébergements-->
         <div id="marseille"><h2>Hébergements à Marseille</h2>
             <div class="bloc_hebergement"><!--Hébergements à Marseille-->
                 <div class="box_hebergement">
@@ -212,59 +215,55 @@
         </div>
     </section>
 
-    <h2 id="titre_activité">Activités à Marseille</h2><!--Activités à Marseille-->
-        <section id="bloc_activités">
+    <section><!--Activités à Marseille-->
+    <h2 id="titre_activite">Activités à Marseille</h2>
+        <div id="bloc_activites">
             <aside>
-            <figure id="vignette1">
-                <a href="#">
+            <a href="#">
+                <figure id="vignette1">
                     <img id="photo1" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
-                    <figcaption><h3 class="titre" id="intitulé1">Vieux Port</h3></figcaption>
-                </a>
-            </figure>
+                    <figcaption><h3 class="titre" id="intitule1">Vieux Port</h3></figcaption>
+                </figure>
+            </a>
             </aside> 
             <aside>
-            <figure id="vignette2">
-                <a href="#">
+            <a href="#">
+                <figure id="vignette2">
                     <img id="photo2" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
-                    <figcaption><h3 id="intitulé2">Fort de Pomègues</h3></figcaption>
-                </a>
-            </figure>
-            <figure id="vignette3">
-                <a href="#">
+                    <figcaption><h3 id="intitule2">Fort de Pomègues</h3></figcaption>
+                </figure>
+            </a>
+            <a href="#">
+                <figure id="vignette3">
                     <img id="photo3" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles de Frioul">
-                    <figcaption><h3 id="intitulé3">Iles de Frioul</h3></figcaption>
-                </a>
-            </figure>
+                    <figcaption><h3 id="intitule3">Iles de Frioul</h3></figcaption>
+                </figure>
+            </a>
             </aside> 
             <aside>
-            <figure id="vignette4">
-                <a href="#">
-                    <div >
-                        <img id="photo4" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
-                        <figcaption><h3 id="intitulé4">Parc National des Calanques</h3></figcaption>
-                    </div>
-                </a>
-            </figure>
+            <a href="#">
+                <figure id="vignette4">
+                    <img id="photo4" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
+                    <figcaption><h3 id="intitule4">Parc National des Calanques</h3></figcaption>
+                </figure>
+            </a>
             </aside>
             <aside>
-            <figure id="vignette5">
-                <a href="#">
-                    <div >
-                        <img id="photo5" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
-                        <figcaption><h3 id="intitulé5">Notre-Dame-de-la-Garde</h3></figcaption>
-                    </div>
-                </a>
-            </figure>
-            <figure  id="vignette6">
-                <a href="#">
-                    <div>
-                        <img id="photo6" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
-                        <figcaption><h3 id="intitulé6">Parc Longchamp</h3></figcaption>
-                    </div>
-                </a>
-            </figure>
-        </aside> 
-        </section>
+            <a href="#">
+                <figure id="vignette5">
+                    <img id="photo5" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
+                    <figcaption><h3 id="intitule5">Notre-Dame-de-la-Garde</h3></figcaption>
+                </figure>
+            </a>
+            <a href="#">
+                <figure  id="vignette6">
+                    <img id="photo6" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
+                    <figcaption><h3 id="intitule6">Parc Longchamp</h3></figcaption>
+                </figure>
+            </a>
+            </aside>
+        </div> 
+    </section>
 
     <footer>
     <div class="bloc_footer"><!--A propos-->
