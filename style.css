@@ -558,6 +558,7 @@ a.lien_footer:hover{
 
     header{
         margin: 0;
+        width: 100%;
     }
 
     nav{
@@ -588,7 +589,6 @@ a.lien_footer:hover{
     }
 
     #recherche{
-        margin-left: 20px;
         width: 90%;
     }
 
