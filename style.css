@@ -88,6 +88,8 @@ h1{
 div.bouton_recherche{
     display: inline-flex;
     margin-top: 20px;
+    border: 1px solid #f2f2f2;
+    border-radius: 15px;
 }
 
 .ici{
@@ -103,8 +105,6 @@ input#Rechercher{
     padding: 13px;
     font-weight: bold;
     border: none;
-    border-top: solid 3px #f2f2f2;
-    border-bottom: 3px solid #f2f2f2;
 }
 
 button{
@@ -114,6 +114,19 @@ button{
     padding: 10px;
     font-size: 1.1em;
     border-radius: 0px 15px 15px 0px;
+}
+
+#loupe{
+    display: none;
+}
+
+.info{
+    border: 3px solid #DEEBFF;
+    padding: 10px;
+    border-radius: 50px;
+    width: 20px;
+    text-align: center;
+    margin-right: 10px;
 }
 
 /*partie des filtres*/
@@ -153,11 +166,12 @@ li:hover .logofiltre{
 
 .logofiltre{
     color: #0065FC;
-    font-size: 1.5em;
-    vertical-align: middle;
+    font-size: 1.4em;
     background: #deebff;
     border-radius: 50px;
     padding: 16px;
+    width: 30px;
+    text-align: center;
 }
 
 .nom_filtre{
@@ -538,5 +552,169 @@ a.lien_footer:hover{
 
 @media screen and (max-width: 375px)/*responsive mobile*/
 {
-    max-width: 375px;
+    body{
+        margin: 30px 0 30px 0;
+    }
+
+    nav{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        max-width: 375px;
+        height: 130px; 
+    }
+
+    #inscription{
+        grid-area: -3/-2/-2/-2;
+        justify-content: flex-end;
+        margin-right: 20px;
+    }
+
+    #logo_reservia{
+        grid-area: -3/-2/-2/-3;
+        margin-left: 20px;
+    }
+
+    #hebergements, #activite:hover{
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+    }
+
+    #inscription:hover{
+        border-top: none;
+    }
+
+    #recherche{
+        margin-left: 20px;
+    }
+
+    h1{
+        margin-top: 60px;
+    }
+
+    #rechercher{
+        display: none;
+    }
+
+    #loupe {
+        display: flex;
+        align-items: center;
+        width: 50px;
+        justify-content: center;
+        border-radius: 15px;
+    }
+
+    #box_filtres{
+        max-width: 375px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .logos{
+        margin: 0 0 15px 0;
+        width: auto;
+        padding-right: 10px;
+        margin-right: 10px;
+        height: 45px;
+    }
+
+    #filtres{
+        flex-wrap: wrap;
+        display: flex;
+        
+    }
+
+    .logofiltre{
+        height: 1.1em;
+    }
+
+    .logos .fas{
+        font-size: 1.1em;
+        padding: 13px;
+        width: 20px;
+    }
+
+    .info{
+        margin: 0;
+    }
+
+    #Hebergements{
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+
+    #marseille{
+        width: 330px;
+        background-color: white;
+        padding: 0;
+        margin: 20px;
+    }
+
+    .bloc_hebergement{
+        grid-template-columns: 330px;
+        grid-template-rows: repeat(6, 200px);
+    }
+
+    .box_hebergement{
+        width: 330px;
+        box-shadow: 1px 1px 5px #d0d2d6;
+    }
+
+    img.imghebergement{
+        width: 330px;
+    }
+
+    #afficherplus{
+        margin: 0;
+    }
+
+    #populaire{
+        padding: 20px;
+        width: 375px;
+        grid-area: 1/1/2/2;
+        height: 570px;
+        border-radius: 0;
+    }
+
+    .bloc_populaire{
+        width: 375px;
+        grid-row-gap: 15px;
+    }
+
+    .box_populaire{
+        width: 330px;
+    }
+
+    h2#titre_activite{
+        margin: 30px 0 0 20px;
+    }
+
+    #bloc_activites{
+        width: 375px;
+        flex-direction: column;
+        height: 1300px;
+    }
+
+    #vignette1, #vignette2, #vignette3, #vignette4, #vignette5, #vignette6{
+        width: 330px;
+        height: 190px;
+        margin: 20px 0 0 20px;
+    }
+
+    #bloc_activites img{
+        width: 330px;
+        height: 135px;
+    }
+
+    #intitule1, #intitule2, #intitule3, #intitule4, #intitule5, #intitule6{
+        margin-top: 135px;
+        height: 55px;
+    }
+
+    footer{
+        margin-top:0;
+        width: 375px;
+        height: 485px;
+        flex-direction: column;
+    }
 }

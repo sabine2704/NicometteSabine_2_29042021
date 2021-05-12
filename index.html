@@ -13,9 +13,9 @@
         <nav><!--Menu de navigation-->
             <div id="logo_reservia">
                 <img src="images/logo/Reservia@3x.png" alt="Logo Reservia"></div>
-            <div class="bouton_nav">
+            <div class="bouton_nav" id="hebergements">
                 <a class="lien_nav" href="#Hebergements">Hébergements</a></div>
-            <div class="bouton_nav">
+            <div class="bouton_nav" id="activite"> 
                 <a class="lien_nav" href="#titre_activite">Activités</a></div>
             <div class="bouton_nav" id="inscription">
                 <a class="lien_nav" href="#">S'inscrire</a></div>
@@ -27,7 +27,8 @@
         <p>En plein centre ville ou en pleine nature</p>
         <div class="bouton_recherche">
             <i class="fas fa-map-marker-alt ici"></i><input type="search" id="Rechercher" name="Rechercher" placeholder="Marseille, France">
-            <button>Rechercher</button>
+            <button id="rechercher">Rechercher</button>
+            <button id="loupe"><i class="fas fa-search"></i></button>
         </div>
         <div id=box_filtres>
             <h3>Filtres</h3>
@@ -51,10 +52,8 @@
             </ul>
         </div>
         <div id="info">
-            <span class="fa-stack fa">
-                <i class="far fa-circle fa-stack-2x circle_i"></i>
                 <i class="fas fa-info info"></i> 
-            </span>Plus de 500 logements sont disponibles dans cette ville
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
     </section>
 
