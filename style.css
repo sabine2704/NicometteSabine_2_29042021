@@ -11,6 +11,10 @@
 body{
     font-family: "raleway light";
     margin: 0;
+}
+
+#bloc_page{
+    margin: 0 auto;
     max-width: 1440px;
 }
 
@@ -26,7 +30,7 @@ header{
     max-width: 1380px;
     width: 98%;
     height: 100px;
-    margin: 0 0 0 20px;
+    margin: auto;
 }
 
 nav{
@@ -78,7 +82,7 @@ h1{
 
 #recherche{
     width: 98%;
-    margin-left: 20px;
+    margin: auto;
     max-width: 1380px;
 }
 
@@ -201,12 +205,13 @@ li:hover .logofiltre{
 
 /*partie hébergements à marseille*/
 #Hebergements{
-    margin: 30px;
+    margin-top: 30px;
     padding-top: 30px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-column-gap: 40px;
     width: 95%;
+    margin: auto;
 }
 
 #marseille{
@@ -232,6 +237,7 @@ li:hover .logofiltre{
     background-color: white;
     padding: 5px;
     border-radius: 20px;
+    box-shadow: 1px 1px 12px #797b80;
 }
 
 img.imghebergement{
@@ -240,6 +246,8 @@ img.imghebergement{
     height: 115px;
     border-radius: 15px 15px 0px 0px;
     object-fit: cover;
+    display: flex;
+    margin: auto;
 }
 
 p,h3{
@@ -291,6 +299,7 @@ a.vignette_photo{
     background-color: white;
     padding: 0 5px;
     border-radius: 20px;
+    box-shadow: 1px 1px 12px #797b80;
 }
 
 .box_populaire:hover {
@@ -346,6 +355,9 @@ h2#titre_activite{
     width: 1340px;
     height: 480px;
     display: flex;
+    column-gap: 40px;
+    margin: auto;
+    margin-top: 30px;
 }
 
 #bloc_media{
@@ -356,7 +368,6 @@ h2#titre_activite{
     display: flex;
     width: 300px;
     height: 450px;
-    margin: 30px 20px 20px 30px;
 }
 
 #photo1{
@@ -382,7 +393,7 @@ h2#titre_activite{
     display: flex;
     height: 240px;
     width: 300px;
-    margin: 30px 20px 0 20px;
+    margin-bottom: 50px;
 }
 
 #photo2{
@@ -408,7 +419,6 @@ h2#titre_activite{
     display: flex;
     height: 160px;
     width: 300px;
-    margin: 50px 20px 0px 20px;
 }
 
 #photo3{
@@ -434,7 +444,6 @@ h2#titre_activite{
     display: flex;
     height: 450px;
     width: 300px;
-    margin: 30px 20px 0 20px;
 }
 
 #photo4{
@@ -460,7 +469,7 @@ h2#titre_activite{
     display: flex;
     height: 190px;
     width: 300px;
-    margin: 30px 0 0 20px;
+    margin-bottom: 50px;
 }
 
 #photo5{
@@ -486,7 +495,6 @@ h2#titre_activite{
     display: flex;
     height: 210px;
     width: 300px;
-    margin: 50px 0 0 20px;
 }
 
 #photo6{
@@ -534,9 +542,9 @@ figure:hover{
 footer{
     display: flex;
     background-color: #f2f2f2;
-    max-width: 1395px;
     height: 220px;
     margin-top: 60px;
+    justify-content: center;
 }
 
 .bloc_footer{
@@ -596,7 +604,7 @@ a.lien_footer:hover{
 
     #populaire{
         padding: 10px 20px 20px 20px;
-        width: 100%;
+        width: 99%;
         grid-area: 1/1/2/2;
         max-width: 1400px;
     }
@@ -614,12 +622,12 @@ a.lien_footer:hover{
     }
 
     .box_populaire{
-        width: 100%;
+        width: 98%;
         max-width: 400px;
     }
 
     #marseille{
-        width: 100%;
+        width: 99%;
         max-width: 1400px;
         padding: 20px;
         margin-top: 20px;
@@ -643,6 +651,7 @@ a.lien_footer:hover{
         height: 100%;
         flex-wrap: wrap;
         max-width: 1400px;
+        justify-content: center;
     }
 
     #vignette11, #vignette12, #vignette13, #vignette14, #vignette15, #vignette16{
@@ -689,11 +698,11 @@ a.lien_footer:hover{
     }
 
     #marseille{
-        max-width: 98%;
+        max-width: 97%;
     }
 
     #populaire{
-        max-width: 98%;
+        max-width: 97%;
     }
 
     .bloc_populaire{
@@ -709,7 +718,7 @@ a.lien_footer:hover{
     }
 
     .box_populaire {
-        max-width: 100%;
+        max-width: 98%;
     }
 
     .bloc2 {
@@ -840,9 +849,10 @@ a.lien_footer:hover{
     #loupe {
         display: flex;
         align-items: center;
-        width: 50px;
+        width: 13%;
         justify-content: center;
         border-radius: 15px;
+        font-size: 1.2em;
     }
 
     #box_filtres{
@@ -890,24 +900,23 @@ a.lien_footer:hover{
 
     #Hebergements{
         display: flex;
-        margin: 0;
+        margin: 0 20px;
         max-width: 767px;
-        width: 100%;
+        width: 95%;
         flex-direction: column-reverse;
     }
 
     #marseille{
         background-color: white;
         padding: 0;
-        margin: 20px;
         max-width: 767px;
-        width: 90%;
+        width: 100%;
     }
 
     .bloc_hebergement{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 99%;
     }
 
     .box_hebergement{
@@ -924,7 +933,11 @@ a.lien_footer:hover{
     }
 
     #populaire{
-        width: 86%;
+        width: 93%;
+    }
+
+    .bloctexte_populaire{
+        width: 95%;
     }
 
     h2#titre_activite{
@@ -933,16 +946,19 @@ a.lien_footer:hover{
 
     #bloc_media{
         flex-direction: column;
+        width: 97%;
     }
 
     .vignette{
-        width: 100%;
+        width: 98%;
+        margin: 5px 0 5px 10px;
     }
 
     #vignette11, #vignette12, #vignette13, #vignette14, #vignette15, #vignette16{
         height: 250px;
-        margin: 20px 0 0 20px;
-        width: 92%;
+        margin: auto;
+        width: 95%;
+        margin-top: 30px;
     }
 
     img.photo_activites{
@@ -972,5 +988,15 @@ a.lien_footer:hover{
 
     .bloc_footer{
         width: 330px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    #populaire{
+        width: 92%;
+    }
+
+    #marseille{
+        width: 98%;
     }
 }
