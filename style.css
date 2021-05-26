@@ -27,8 +27,8 @@ header img{
 header{
     display: flex;
     justify-content: space-between;
-    max-width: 1380px;
-    width: 98%;
+    max-width: 1440px;
+    width: 95%;
     height: 100px;
     margin: auto;
 }
@@ -41,14 +41,6 @@ nav{
     width: 100%;
     align-items: center;
     justify-items: center;
-}
-
-nav li{
-    width: 160px;
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
 }
 
 #logo_reservia{
@@ -73,6 +65,7 @@ nav li{
 .bouton_nav:hover{ 
     color : #0065FC;
     border-top: 3px solid #0065FC;
+    font-weight: bold;
 }
 
 /*bouton recherche*/
@@ -81,9 +74,9 @@ h1{
 }
 
 #recherche{
-    width: 98%;
+    width: 95%;
     margin: auto;
-    max-width: 1380px;
+    max-width: 1440px;
 }
 
 #inscription{
@@ -190,10 +183,10 @@ li:hover .logofiltre{
 }
 
 .info{
-    border: 3px solid #DEEBFF;
-    padding: 10px;
+    border: 2px solid #f2f2f2;
+    padding: 6px;
     border-radius: 50px;
-    width: 20px;
+    width: 18px;
     text-align: center;
     margin-right: 10px;
     color: #0065FC;
@@ -308,14 +301,14 @@ a.vignette_photo{
 }
 
 img.imgpopulaire{
-    width: 130px;
+    width: 100%;
     height: 135px;
     object-fit: cover;
     border-radius: 15px 0px 0px 15px;
 }
 
 .bloc2{
-    grid-template-columns: 130px 210px;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 140px;
     max-width: 340px;
     display: grid;
@@ -334,12 +327,10 @@ img.imgpopulaire{
 
 .bloctexte_populaire{
     padding: 15px;
-    max-width: 200px;
     height: 110px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
 }
 
 #afficherplus{
@@ -347,8 +338,13 @@ img.imgpopulaire{
 }
 
 /*partie activités*/
+#activites{
+    width: 95%;
+    margin: auto;
+}
+
 h2#titre_activite{
-    margin: 60px 0 0px 30px;
+    margin-top: 60px;
 }
 
 #bloc_activites{
@@ -547,11 +543,16 @@ footer{
     justify-content: center;
 }
 
+footer h3{
+    font-size: 1.5em;
+    margin: 40px 0 20px 0;
+}
+
 .bloc_footer{
     display: flex;
     flex-direction: column;
     margin-left: 40px;
-    width: 450px;
+    width: 33%;
     padding-top: 15px;
 }
 
@@ -575,12 +576,13 @@ a.lien_footer:hover{
 
     header{
         max-width: 1400px;
-        width: 98%;
-        margin-left: 20px;
+        width: 96%;
+        margin: auto;
     }
 
     #recherche{
-        width: 98%;
+        width: 96%;
+        margin: auto;
     }
 
     .bloc_hebergement{
@@ -589,8 +591,6 @@ a.lien_footer:hover{
 
     #Hebergements{
         grid-template-columns: 1fr;
-        max-width: 1400px;
-        margin: 0 0 0 20px;
     }
 
     #box_hebergement{
@@ -604,7 +604,6 @@ a.lien_footer:hover{
 
     #populaire{
         padding: 10px 20px 20px 20px;
-        width: 99%;
         grid-area: 1/1/2/2;
         max-width: 1400px;
     }
@@ -626,8 +625,12 @@ a.lien_footer:hover{
         max-width: 400px;
     }
 
+    .bloctexte_populaire{
+        padding: 0 0 0 10px;
+        height: 95%;
+    }
+
     #marseille{
-        width: 99%;
         max-width: 1400px;
         padding: 20px;
         margin-top: 20px;
@@ -639,6 +642,10 @@ a.lien_footer:hover{
 
     img.imghebergement {
         max-width: 100%;
+    }
+
+    #activites{
+        width: 97%;
     }
 
     #bloc_activites{
@@ -691,64 +698,9 @@ a.lien_footer:hover{
     }
 }
 
-@media screen and (max-width: 1220px){
-    #Hebergements{
-        max-width: 100%;
-        margin: 0 0 0 20px;
-    }
-
-    #marseille{
-        max-width: 97%;
-    }
-
-    #populaire{
-        max-width: 97%;
-    }
-
-    .bloc_populaire{
-        max-width: 1200px;
-        width: 100%;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-row-gap: 25px;
-    }
-
-    img.imgpopulaire {
-        width: 100%;
-    }
-
-    .box_populaire {
-        max-width: 98%;
-    }
-
-    .bloc2 {
-        grid-template-columns: 1fr 2fr ;
-    }
-
-    .bloctexte_populaire{
-        max-width: 98%;
-    }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    header{
-        width: 97%;
-    }
-
     nav{
         grid-template-columns: 2fr 1fr 1fr 1fr;
-    }
-
-    #recherche{
-        width: 97%;
-    }
-
-    #Hebergements{
-        max-width: 100%;
-    }
-
-    #marseille{
-        width: 96%;
     }
 
     .bloc_hebergement{
@@ -756,8 +708,16 @@ a.lien_footer:hover{
         grid-template-rows: 1fr 1fr 1fr;
     }
 
-    #populaire{
-        width: 96%;
+    .bloc2{
+        grid-template-columns: 35% 65%;
+    }
+
+    img.imgpopulaire{
+        width: 100%;
+    }
+
+    .bloctexte, .bloctexte_populaire{
+        font-size: 92%;
     }
 
     #bloc_media{
@@ -801,8 +761,6 @@ a.lien_footer:hover{
     nav{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        width: 100%;
-        height: 100%; 
     }
 
     #inscription{
@@ -826,7 +784,8 @@ a.lien_footer:hover{
     }
 
     #recherche{
-        width: 90%;
+        padding: 0 20px;
+        width: auto;
     }
 
     h1{
@@ -899,28 +858,35 @@ a.lien_footer:hover{
     }
 
     #Hebergements{
-        display: flex;
-        margin: 0 20px;
-        max-width: 767px;
-        width: 95%;
-        flex-direction: column-reverse;
+        width: auto;
     }
 
+    #populaire{
+        border-radius: 0;
+    }
+    
+    .bloc_populaire{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap: 25px;
+    }
+
+    .box_populaire{
+        max-width: 767px;
+    }
+    
     #marseille{
         background-color: white;
-        padding: 0;
-        max-width: 767px;
-        width: 100%;
     }
 
     .bloc_hebergement{
         display: flex;
         flex-direction: column;
-        width: 99%;
+        width: 97.5%;
+        margin: auto;
     }
 
     .box_hebergement{
-        width: 97%;
         box-shadow: 1px 1px 5px #d0d2d6;
     }
 
@@ -932,32 +898,25 @@ a.lien_footer:hover{
         margin: 0;
     }
 
-    #populaire{
-        width: 93%;
-    }
-
-    .bloctexte_populaire{
-        width: 95%;
-    }
-
-    h2#titre_activite{
-        margin: 30px 0 0 20px;
+    #activites{
+        width: auto;
+        margin-top: 50px;
     }
 
     #bloc_media{
         flex-direction: column;
-        width: 97%;
+        width: auto;
+        padding: 0 20px;
     }
 
     .vignette{
-        width: 98%;
-        margin: 5px 0 5px 10px;
+        width: 100%;
+        margin-bottom: 10px;
     }
 
     #vignette11, #vignette12, #vignette13, #vignette14, #vignette15, #vignette16{
         height: 250px;
         margin: auto;
-        width: 95%;
         margin-top: 30px;
     }
 
@@ -979,24 +938,14 @@ a.lien_footer:hover{
     }
 
     footer{
-        margin-top:30px;
-        width: 100%;
-        height: 485px;
+        margin-top:60px;
+        height: 100%;
         flex-direction: column;
-        padding: 0;
+        padding-bottom: 60px;
     }
 
     .bloc_footer{
-        width: 330px;
+        width: auto;
     }
 }
 
-@media screen and (max-width: 640px){
-    #populaire{
-        width: 92%;
-    }
-
-    #marseille{
-        width: 98%;
-    }
-}
